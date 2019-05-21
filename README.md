@@ -17,13 +17,13 @@ Ensure you have NodeJS Environtment. Please refer to https://nodejs.org/en/ to s
 
 # Run socket-client
 - go to inside socket-client
-- run command "npm install"
-- npm start
+- run command ```npm install```
+- ```npm start```
 
 # Run socket-server
 - Go to inside socket-server
-- run command "npm install"
-- node app.js
+- run command ```npm install```
+- ```node app.js```
 
 
 
