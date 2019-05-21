@@ -6,7 +6,7 @@ Ensure you have NodeJS Environtment. Please refer to https://nodejs.org/en/ to s
 
 # Architechture
 - socket-client is a example of client who consume all message through spesific channel port.
-- socket-server is a server to produce message then distributed into spesific channel. It will emit all message teransmition
+- socket-server is a server to produce message then distributed into spesific channel. It will emit all message transmition
 
 # Depedencies Framework 
 - ReactJS 
