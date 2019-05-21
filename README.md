@@ -13,7 +13,7 @@ Ensure you have NodeJS Environtment. Please refer to https://nodejs.org/en/ to s
 - Socket.io
 
 # Clone Projects
-- git clone git@github.com:firmangel8/research-distributed-messaging.git
+```git clone git@github.com:firmangel8/research-distributed-messaging.git```
 
 # Run socket-client
 - go to inside socket-client
