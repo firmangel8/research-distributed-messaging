@@ -19,12 +19,31 @@ class App extends Component {
   render() {
     const { response } = this.state;
     return (
-      <div style={{ textAlign: "center" }}>
-        {response ? (
-          <p>The temperature in Key is: {response} °F</p>
-        ) : (
-          <p>Loading...</p>
-        )}
+      <div className="container-fluid h-100 justify-content-center">
+        <div className="row justify-content-center align-middle h-100">
+          <div className="col-4" />
+          <div className="col-2">
+            <div className="container-custom">
+              <div className="loader">
+                <span className="top" />
+                <span className="bottom" />
+              </div>
+            </div>
+          </div>
+          <div className="col-4 align-self-center">
+            {response ? <p>Consume : {response}</p> : <p>Loading...</p>}
+          </div>
+          <div className="col-4" />
+        </div>
+        <footer>
+          <div className="row">
+            <div className="col-12">
+              <div className="text-center">
+                <span className="text-muted">&copy; 2019 Distributed Messaging with SocketIO - Teguh Dermawan</span>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     );
   }
