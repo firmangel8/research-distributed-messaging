@@ -6,18 +6,26 @@ class App extends Component {
     super();
     this.state = {
       response: false,
-      endpoint: "http://127.0.0.1:4001"
+      endpoint: "http://127.0.0.1:4001",
+      increment: 0,
+      errInc : 0,
     };
   }
 
   componentDidMount() {
     const { endpoint } = this.state;
     const socket = socketIOClient(endpoint);
-    socket.on("FromAPI", data => this.setState({ response: data }));
+    socket.on("FromAPI", data => this.setState({ response: data, increment: this.state.increment+1 }));
+    
   }
 
   render() {
     const { response } = this.state;
+    console.log(this.state.increment);
+    localStorage.setItem("RECORDS",this.state.increment);
+    response
+      ? localStorage.setItem("SUCCESS", this.state.increment)
+      : localStorage.setItem("LOSS", this.state.errInc++);
     return (
       <div className="container-fluid h-100 justify-content-center">
         <div className="row justify-content-center align-middle h-100">
