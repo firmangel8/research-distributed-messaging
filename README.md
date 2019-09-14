@@ -16,12 +16,12 @@ Ensure you have NodeJS Environtment. Please refer to https://nodejs.org/en/ to s
 ```git clone git@github.com:firmangel8/research-distributed-messaging.git```
 
 # Run socket-client
-- go to inside socket-client
+- go to inside socket-client (cd socked-server)
 - run command ```npm install```
-- ```npm start```
+- run command ```npm start```
 
 # Run socket-server
-- Go to inside socket-server
+- Go to inside socket-server (cd socked-server)
 - run command ```npm install```
 - ```node app.js```
 
