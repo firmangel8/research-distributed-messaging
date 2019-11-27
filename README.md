@@ -16,7 +16,7 @@ Ensure you have NodeJS Environtment. Please refer to https://nodejs.org/en/ to s
 ```git clone git@github.com:firmangel8/research-distributed-messaging.git```
 
 # Run socket-client
-- go to inside socket-client (cd socked-server)
+- go to inside socket-client (cd socked-client)
 - run command ```npm install```
 - run command ```npm start```
 
